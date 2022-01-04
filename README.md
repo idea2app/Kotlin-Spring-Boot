@@ -6,7 +6,7 @@
 
         idea
 
-版本依赖：
+开发版本：
         
         Springboot 版本 2.6.2
 
