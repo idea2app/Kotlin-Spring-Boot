@@ -1,4 +1,4 @@
-package com.ideapp
+package com.ideapp.kotlinspringboot
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
