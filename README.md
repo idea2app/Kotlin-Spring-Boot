@@ -14,7 +14,7 @@
 
         kotlin 版本 1.3.70
 
-依赖
+添加依赖
 
 Spring Web
 ````
@@ -32,6 +32,6 @@ Tomcat
         </dependency>
 ````
         
-启动
+启动项目
         
         运行KotlinSpringBootApplication.kt的main函数
