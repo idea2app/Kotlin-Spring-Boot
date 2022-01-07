@@ -1,37 +1,38 @@
 # Kotlin-Spring-Boot
 
-开发环境规范
+[Spring Boot][1] project scaffold written in [Kotlin][2], which is based on the [Official Guide][3].
 
-开发工具:
+## Development environment
 
-        idea
+### Windows
 
-开发版本：
-        
-        Springboot 版本 2.6.2
+```powershell
+choco install kotlinc gradle -y
+```
 
-        jdk 版本 1.8
+### Mac OS X
 
-        kotlin 版本 1.3.70
+```bash
+brew install kotlin gradle
+```
 
-添加依赖
+## Local running
 
-Spring Web
-````
-        <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-````
-Tomcat
-````
-        <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-tomcat</artifactId>
-                <scope>provided</scope>
-        </dependency>
-````
-        
-启动项目
-        
-        运行KotlinSpringBootApplication.kt的main函数
+```shell
+./gradlew bootRun
+```
+
+## Building
+
+```shell
+./gradlew build
+docker build .
+```
+
+## Reference
+
+1. [Start Kotlin without IDE](https://tech-query.me/development/start-kotlin-without-ide/)
+
+[1]: https://spring.io/
+[2]: https://kotlinlang.org/
+[3]: https://spring.io/guides/tutorials/spring-boot-kotlin/
