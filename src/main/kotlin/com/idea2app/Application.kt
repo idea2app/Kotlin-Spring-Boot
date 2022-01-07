@@ -1,11 +1,10 @@
-package com.ideapp
+package com.idea2app
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
-@SpringBootApplication
-open class KotlinSpringBootApplication
+@SpringBootApplication open class Application
 
 fun main(args: Array<String>) {
-	runApplication<KotlinSpringBootApplication>(*args)
+    runApplication<Application>(*args)
 }
