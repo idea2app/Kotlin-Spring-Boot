@@ -29,6 +29,10 @@ jobs:
         run: |
           chmod +x ./gradlew
           ./gradlew build
+      - id: ImageName
+        uses: ASzc/change-string-case-action@v2
+        with:
+          string: ${{ github.repository }}
       - name: Push Image
         uses: docker/build-push-action@v2
         with:
@@ -36,5 +40,5 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:${{ github.ref_name }}
-            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ steps.ImageName.outputs.lowercase }}:${{ github.ref_name }}
+            ghcr.io/${{ steps.ImageName.outputs.lowercase }}:latest
