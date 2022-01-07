@@ -1,4 +1,4 @@
-package com.ideapp.user
+package com.idea2app.user
 
 import org.springframework.stereotype.Service
 
